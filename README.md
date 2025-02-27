@@ -32,4 +32,4 @@ Arch Linux (Manjaro, EndeavourOS, etc.)
 
 Fedora
 
-`sudo dnf install python3-tkinter wget xorg-x11-utils wine -y
+`sudo dnf install python3-tkinter wget xorg-x11-utils wine -y`
