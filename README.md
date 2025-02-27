@@ -26,10 +26,10 @@ Ubuntu/Debian-based distros:
 
 `sudo apt install python3-tk wget x11-utils wine -y`
 
-`Arch Linux (Manjaro, EndeavourOS, etc.)`
+Arch Linux (Manjaro, EndeavourOS, etc.)
 
 `sudo pacman -S python tk wget xorg-xprop wine --noconfirm`
 
-`Fedora
+Fedora
 
-sudo dnf install python3-tkinter wget xorg-x11-utils wine -y
+`sudo dnf install python3-tkinter wget xorg-x11-utils wine -y
