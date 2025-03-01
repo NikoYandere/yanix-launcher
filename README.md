@@ -1,3 +1,9 @@
+
+
+![Yanix-Launcher](https://github.com/user-attachments/assets/4ee6c44e-af2e-49e6-8d98-8a7417be8304)
+
+
+
 YANIX LAUNCHER IS A LAUNCHER FOR YANDERE SIMULATOR,THIS IS NOT A PORT OF YANDERE SIMULATOR FOR LINUX.
 1:how to play?
 N:extract Yandere sim's game folder in YanixLauncher and then press "play"
