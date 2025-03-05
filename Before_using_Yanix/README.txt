@@ -1,36 +1,53 @@
-YANIX LAUNCHER IS A LAUNCHER FOR YANDERE SIMULATOR,THIS IS NOT A PORT OF YANDERE SIMULATOR FOR LINUX.
-1:how to play?
-N:settings
-2:what runner this use?
-N:WINE,that is Wine is Not an Emulator required to run yanix. IF YOU DON'T HAVE WINE,YOU CANNOT PLAY YANIX!!
-..........................................................................
-this uses PURE WINE,and may have DISPLAY ISSUES!
-..........................................................................
-Yanix Launcher by NikoYandere
-Distros tested:
-Debian 12,arch linux
-........................................................................
-Dependencies Required for Yanix Launcher
+# Yanix-Launcher
+This Launcher is not supported or created by YandereDev,its a independent initiative for a Launcher of Yandere Simulator for Linux OSes,please,dont beg us a Windows Port,we are optimizing Yanix Launcher for Linux OSes,and please,dont beg us a .deb,.appimage,.snap for a universal package that everyone can use,we will provide a .py that is a python-3 script,this is a Launcher that runs in WINE,but you need WINE  8.0 or newer to work propely,and a disadvantage:WINE may have Display Issues but major display bugs have been Fixed in Unity 6 Build,like full screen bugs,but Some Letters don't display,and to fix that,YandereDev has to investigate it,this launcher is open-source,and we have a GitHub Repository and a Installer too  yanix is builded and tested for Linux,a Mac os or FreeBSD build maybe will be not realsed,but you can   Fork   the Repository for you Unix/Linux Distro.
 
-Before using Yanix Launcher, install the following packages:
-For Running the Launcher (Python and GUI)
+any bug report like: Letters and not showing for me! will be not listened,its total responsibility of YandereDev,not mine,and know that WINE have Display issues and maybe we will switch to ge-proton
 
-    Python 3
-    Tkinter (may need to be installed separately)
-    wget (for downloading files automatically)
-    x-terminal-emulator (to open commands in the terminal)
-    Wine (for running the game)
+## Dependencies
 
-Installation Commands:
-Ubuntu/Debian-based distros:
+Before running Yanix-Launcher, you need to make sure that the dependencies are installed on your system.
 
-sudo apt install python3-tk wget x11-utils wine -y
+### Dependencies
 
-Arch Linux (Manjaro, EndeavourOS, etc.)
+1. **playsound(pygame)** - Library for managing audio and animations.
+2. **requests** - To download updates and resources.
+3. **python3-tk** - For the graphical interface.
+4. **wine** - To run Yandere Simulator on Linux (necessary if you are playing with Wine).
 
-sudo pacman -S python tk wget xorg-xprop wine --noconfirm
+### How to install the dependencies
+
+#### Ubuntu/Debian
+
+Run the following command to install the necessary dependencies:
+
+sudo apt install python3-pygame python3-requests python3-tk wine
+
+Arch Linux
+
+On Arch Linux, you can use pacman to install the dependencies:
+
+sudo pacman -S python-pygame python-requests tk wine
 
 Fedora
 
-sudo dnf install python3-tkinter wget xorg-x11-utils wine -y
+On Fedora, use dnf to install the dependencies:
 
+sudo dnf install python3-pygame python3-requests python3-tkinter wine
+
+If you are using another Linux distribution, you may need to adapt the commands to suit your system.
+How to run Yanix-Launcher
+
+    Clone the repository:
+
+git clone https://github.com/NikoYandere/Yanix-Launcher.git
+
+    Access the launcher directory:
+
+cd Yanix-Launcher
+
+    Run the launcher:
+
+python3 binary/yanix-launcher.py
+
+    Language choice: The launcher supports multiple languages (English, Spanish, Portuguese) and allows you to change the language directly in the interface.
+ 
