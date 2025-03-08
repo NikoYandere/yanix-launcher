@@ -15,7 +15,7 @@ Before running Yanix-Launcher, you need to make sure that the dependencies are i
 
 ### Dependencies
 
-1. **playsound(pygame)** - Library for managing audio and animations.
+1. **playsound** - Library for managing audio and animations.
 2. **requests** - To download updates and resources.
 3. **python3-tk** - For the graphical interface.
 4. **wine** - To run Yandere Simulator on Linux (necessary if you are playing with Wine).
@@ -56,4 +56,5 @@ cd Yanix-Launcher
 python3 binary/yanix-launcher.py
 
     Language choice: The launcher supports multiple languages (English, Spanish, Portuguese) and allows you to change the language directly in the interface.
+    one thing:install playsound with pip install playsound.
  
