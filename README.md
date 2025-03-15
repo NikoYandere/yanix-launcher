@@ -43,17 +43,10 @@ On Fedora, use dnf to install the dependencies:
 If you are using another Linux distribution, you may need to adapt the commands to suit your system.
 How to run Yanix-Launcher
 
-    Clone the repository:
+run by source:
 
-`git clone https://github.com/NikoYandere/Yanix-Launcher.git`
-
-    Access the launcher directory:
-
+`git clone https://github.com/NikoYandere/yanix-launcher`
+          
 `cd Yanix-Launcher`
 
-    Run the launcher:
-
 `python3 binary/yanix-launcher.py`
-
-    Language choice: The launcher supports multiple languages (English, Spanish, Portuguese) and allows you to change the language directly in the interface.
-    one thing:install playsound with pip install playsound.
