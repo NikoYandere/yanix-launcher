@@ -26,35 +26,34 @@ Before running Yanix-Launcher, you need to make sure that the dependencies are i
 
 Run the following command to install the necessary dependencies:
 
-sudo apt install python3-pygame python3-requests python3-tk wine
+`sudo apt install python3-pygame python3-requests python3-tk wine  pip && pip install playsound`
 
 Arch Linux
 
 On Arch Linux, you can use pacman to install the dependencies:
 
-sudo pacman -S python-pygame python-requests tk wine
+`sudo pacman -S python-pygame python-requests tk wine pip && pip install playsound`
 
 Fedora
 
 On Fedora, use dnf to install the dependencies:
 
-sudo dnf install python3-pygame python3-requests python3-tkinter wine
+`sudo dnf install python3-pygame python3-requests python3-tkinter wine  pip && pip install playsound`
 
 If you are using another Linux distribution, you may need to adapt the commands to suit your system.
 How to run Yanix-Launcher
 
     Clone the repository:
 
-git clone https://github.com/NikoYandere/Yanix-Launcher.git
+`git clone https://github.com/NikoYandere/Yanix-Launcher.git`
 
     Access the launcher directory:
 
-cd Yanix-Launcher
+`cd Yanix-Launcher`
 
     Run the launcher:
 
-python3 binary/yanix-launcher.py
+`python3 binary/yanix-launcher.py`
 
     Language choice: The launcher supports multiple languages (English, Spanish, Portuguese) and allows you to change the language directly in the interface.
     one thing:install playsound with pip install playsound.
- 
