@@ -41,9 +41,7 @@ On Fedora, use dnf to install the dependencies:
 `sudo dnf install python3-pygame python3-requests python3-tkinter wine  pip && pip install playsound`
 
 If you are using another Linux distribution, you may need to adapt the commands to suit your system.
-How to run Yanix-Launcher
-
-run by source:
+How to run Yanix-Launcher by source:
 
 `git clone https://github.com/NikoYandere/yanix-launcher`
           
