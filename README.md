@@ -32,7 +32,7 @@ Arch Linux
 
 On Arch Linux, you can use pacman to install the dependencies:
 
-`sudo pacman -S python-pygame python-requests tk wine pip && pip install playsound`
+`sudo pacman -S python-pygame python-requests tk wine python-pip && pip install playsound`
 
 Fedora
 
