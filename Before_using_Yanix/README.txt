@@ -1,4 +1,5 @@
 # Yanix-Launcher
+this isnt a port!!!
 This Launcher is not supported or created by YandereDev,its a independent initiative for a Launcher of Yandere Simulator for Linux OSes,please,dont beg us a Windows Port,we are optimizing Yanix Launcher for Linux OSes,and please,dont beg us a .deb,.appimage,.snap for a universal package that everyone can use,we will provide a .py that is a python-3 script,this is a Launcher that runs in WINE,but you need WINE  8.0 or newer to work propely,and a disadvantage:WINE may have Display Issues but major display bugs have been Fixed in Unity 6 Build,like full screen bugs,but Some Letters don't display,and to fix that,YandereDev has to investigate it,this launcher is open-source,and we have a GitHub Repository and a Installer too  yanix is builded and tested for Linux,a Mac os or FreeBSD build maybe will be not realsed,but you can   Fork   the Repository for you Unix/Linux Distro.
 
 any bug report like: Letters and not showing for me! will be not listened,its total responsibility of YandereDev,not mine,and know that WINE have Display issues and maybe we will switch to ge-proton
