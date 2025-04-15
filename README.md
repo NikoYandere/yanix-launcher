@@ -48,3 +48,4 @@ How to run Yanix-Launcher by source:
 `cd Yanix-Launcher`
 
 `python3 binary/yanix-launcher.py`
+contact:contatoniko52@gmail.com 
