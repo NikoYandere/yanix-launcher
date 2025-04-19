@@ -15,7 +15,7 @@ Before running Yanix-Launcher, you need to make sure that the dependencies are i
 
 ### Dependencies
 
-1. **playsound** - Library for managing audio and animations.
+1. **pygame** - Library for managing audio and animations.
 2. **requests** - To download updates and resources.
 3. **python3-tk** - For the graphical interface.
 4. **wine** - To run Yandere Simulator on Linux (necessary if you are playing with Wine).
@@ -26,19 +26,18 @@ Before running Yanix-Launcher, you need to make sure that the dependencies are i
 
 Run the following command to install the necessary dependencies:
 
-`sudo apt install python3-pygame python3-requests python3-tk wine pip && pip install playsound`
+`sudo apt install python3-pygame python3-requests python3-tk wine`
 
 Arch Linux
 
 On Arch Linux, you can use pacman to install the dependencies:
 
-`sudo pacman -S python-pygame python-requests tk wine python-pip && pip install playsound`
-
+`sudo pacman -S python-pygame python-requests tk wine`
 Fedora
 
 On Fedora, use dnf to install the dependencies:
 
-`sudo dnf install python3-pygame python3-requests python3-tkinter wine pip && pip install playsound`
+`sudo dnf install python3-pygame python3-requests python3-tkinter wine`
 
 If you are using another Linux distribution, you may need to adapt the commands to suit your system.
 How to run Yanix-Launcher by source:
