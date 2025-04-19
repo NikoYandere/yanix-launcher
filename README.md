@@ -1,6 +1,5 @@
+![1000037719](https://github.com/user-attachments/assets/fe9bebc1-c338-41ed-8a85-1bc5f79a46cd)
 
-
-![Yanix-Launcher](https://github.com/user-attachments/assets/a4fdb8c0-fcfa-44d1-94d3-7e9e359c13a9)
 
 
 
