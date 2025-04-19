@@ -5,9 +5,9 @@
 
 
 # Yanix-Launcher
-This Launcher is not supported or created by YandereDev,its a independent initiative for a Launcher of Yandere Simulator for Linux OSes,please,dont beg us a Windows Port,we are optimizing Yanix Launcher for Linux OSes,and please,dont beg us a .deb,.appimage,.snap for a universal package that everyone can use,we will provide a .py that is a python-3 script,this is a Launcher that runs in WINE,but you need WINE  8.0 or newer to work propely,and a disadvantage:WINE may have Display Issues but major display bugs have been Fixed in Unity 6 Build,like full screen bugs,but Some Letters don't display,and to fix that,YandereDev has to investigate it,this launcher is open-source,and we have a GitHub Repository and a Installer too  yanix is builded and tested for Linux,a Mac os or FreeBSD build maybe will be not realsed,but you can   Fork   the Repository for you Unix/Linux Distro.
+This Launcher is not supported or created by YandereDev,its an independent initiative for a Launcher of Yandere Simulator for Linux OSes,please,dont beg us a Windows Port,we are optimizing Yanix Launcher for Linux OSes,and please,dont beg us a .deb,.appimage,.snap for a universal package that everyone can use,we will provide a .py that is a python-3 script,this is a Launcher that runs in WINE,but you need WINE 8.0 or newer to work propelly,and a disadvantage:WINE may have Display Issues but major display bugs have been Fixed in Unity 6 Build,like full screen bugs,but Some Letters don't display, and to fix that, YandereDev has to investigate it, this launcher is open-source, and we have a GitHub Repository and an Installer too yanix is built and tested for Linux, a FreeBSD build or another OS build (If you are Thinking in using This Launcher in MacOS, Optimizations have already been made for MacOS) will be not realsed, but you can Fork the Repository for you Unix/Linux Distro.
 
-any bug report like: Letters and not showing for me! will be not listened,its total responsibility of YandereDev,not mine,and know that WINE have Display issues and maybe we will switch to ge-proton
+any bug report like: Letters and not showing for me! will be not listened, its total responsibility of YandereDev, not mine, and know that WINE have Display issues and maybe we will switch to ge-proton
 
 ## Dependencies
 
@@ -26,7 +26,7 @@ Before running Yanix-Launcher, you need to make sure that the dependencies are i
 
 Run the following command to install the necessary dependencies:
 
-`sudo apt install python3-pygame python3-requests python3-tk wine  pip && pip install playsound`
+`sudo apt install python3-pygame python3-requests python3-tk wine pip && pip install playsound`
 
 Arch Linux
 
@@ -38,7 +38,7 @@ Fedora
 
 On Fedora, use dnf to install the dependencies:
 
-`sudo dnf install python3-pygame python3-requests python3-tkinter wine  pip && pip install playsound`
+`sudo dnf install python3-pygame python3-requests python3-tkinter wine pip && pip install playsound`
 
 If you are using another Linux distribution, you may need to adapt the commands to suit your system.
 How to run Yanix-Launcher by source:
@@ -49,3 +49,4 @@ How to run Yanix-Launcher by source:
 
 `python3 binary/yanix-launcher.py`
 contact:contatoniko52@gmail.com 
+ 
