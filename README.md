@@ -33,6 +33,7 @@ Arch Linux
 On Arch Linux, you can use pacman to install the dependencies:
 
 `sudo pacman -S python-pygame python-requests tk wine`
+
 Fedora
 
 On Fedora, use dnf to install the dependencies:
