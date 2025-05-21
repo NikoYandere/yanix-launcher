@@ -25,9 +25,9 @@ Before running Yanix-Launcher, you need to make sure that the dependencies are i
 
 Run the following command to install the necessary dependencies:
 
-``
+```
 sudo apt install python3-pygame python3-requests python3-tk wine
-``
+```
 
 Arch Linux
 
@@ -53,11 +53,12 @@ ucn install org.nikoyandere.yanix-launcher.ucn
 
 If you are using another Linux distribution, you may need to adapt the commands to suit your system.
 How to run Yanix-Launcher by source:
-
-`git clone https://github.com/NikoYandere/yanix-launcher`
+ ```
+`git clone https://github.com/NikoYandere/yanix-launcher
           
-`cd Yanix-Launcher`
+cd Yanix-Launcher
 
-`python3 binary/yanix-launcher.py`
+python3 binary/yanix-launcher.py
+```
 contact:nikoyandere@proton.me
  
