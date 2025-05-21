@@ -33,17 +33,17 @@ Arch Linux
 
 On Arch Linux, you can use pacman to install the dependencies:
 
-``
+```
 sudo pacman -S python-pygame python-requests tk wine
-``
+```
 
 Fedora
 
 On Fedora, use dnf to install the dependencies:
 
-``
+```
 sudo dnf install python3-pygame python3-requests python3-tkinter wine
-``
+```
 
 Ucn package Manager
 **in newer versions yanix will be a executable bcuz i have plans of removing the  system package manager function,but it will be 160~120 mb,so expect a big archive,also it don't will use tk in ucn version**
