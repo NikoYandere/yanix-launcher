@@ -48,7 +48,8 @@ sudo dnf install python3-pygame python3-requests python3-tkinter wine
 Ucn package Manager
 **(in newer versions yanix will be a executable bcuz i have plans of removing the  system package manager function,but it will be 160~120 mb,so expect a big archive,also it don't will use tk in ucn version,it will use PyQt5)**
 ```
-ucn install org.nikoyandere.yanix-launcher.ucn
+ucn add-repo https://nikoyandere.github.io/ucn-repo # ucn don't have by default a repo
+ucn install org.nikoyandere.yanix-launcher
 ```
 
 If you are using another Linux distribution, you may need to adapt the commands to suit your system.
