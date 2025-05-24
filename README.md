@@ -26,7 +26,7 @@ Before running Yanix-Launcher, you need to make sure that the dependencies are i
 Run the following command to install the necessary dependencies:
 
 ```
-sudo apt install python3-pygame python3-requests python3-tk wine
+sudo apt install python3-pygame python3-requests python3-tk wine winetricks
 ```
 
 Arch Linux
@@ -34,7 +34,7 @@ Arch Linux
 On Arch Linux, you can use pacman to install the dependencies:
 
 ```
-sudo pacman -S python-pygame python-requests tk wine
+sudo pacman -S python-pygame python-requests tk wine winetricks 
 ```
 
 Fedora
@@ -42,7 +42,7 @@ Fedora
 On Fedora, use dnf to install the dependencies:
 
 ```
-sudo dnf install python3-pygame python3-requests python3-tkinter wine
+sudo dnf install python3-pygame python3-requests python3-tkinter wine winetricks 
 ```
 
 Ucn package Manager
