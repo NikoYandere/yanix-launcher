@@ -3,7 +3,7 @@
 
 
 
-# Yanix-Launcher
+# Yanix-Launcher 
 This Launcher is not supported or created by YandereDev,its an independent initiative for a Launcher of Yandere Simulator for Linux OSes,this is a Launcher that runs in WINE,but you need WINE 8.0 or newer to work propelly,and a disadvantage:WINE may have Display Issues but major display bugs have been Fixed in Unity 6 Build,like full screen bugs,but Some Letters don't display, and to fix that, YandereDev has to investigate it, this launcher is open-source, and we have a GitHub Repository and an Installer too yanix is built and tested for Linux, a FreeBSD build or another OS build (If you are Thinking in using This Launcher in MacOS, Optimizations have already been made for MacOS) will be not realsed, but you can Fork the Repository for you Unix/Linux Distro.
 
 any bug report like: Letters and not showing for me! will be not listened, its total responsibility of YandereDev, not mine, and know that WINE have Display issues and maybe we will switch to ge-proton
@@ -45,15 +45,9 @@ On Fedora, use dnf to install the dependencies:
 sudo dnf install python3-pygame python3-requests python3-tkinter wine winetricks 
 ```
 
-Ucn package Manager
-**(in newer versions yanix will be a executable bcuz i have plans of removing the  system package manager function,but it will be 160~120 mb,so expect a big archive,also it don't will use tk in ucn version,it will use PyQt5)**
-```
-ucn add-repo https://nikoyandere.github.io/UcnHub # ucn don't have by default a repo
-ucn install org.nikoyandere.yanix-launcher
-```
 
-If you are using another Linux distribution, you may need to adapt the commands to suit your system.
-How to run Yanix-Launcher by source:
+
+# Running:
  ```
 `git clone https://github.com/NikoYandere/yanix-launcher
           
@@ -61,7 +55,11 @@ cd Yanix-Launcher
 
 python3 binary/yanix-launcher.py
 ```
+# By Ucn Package Manager
+**(in newer versions yanix will be a executable bcuz i have plans of removing the  system package manager function,but it will be 160~120 mb,so expect a big archive,also it don't will use tk in ucn version,it will use PyQt5)**
+```
+ucn add-repo https://nikoyandere.github.io/UcnHub # ucn don't have by default a repo
+ucn install org.nikoyandere.yanix-launcher
+```
 contact:nikoyandere@proton.me
- 
 
-# Available in UcnHub
