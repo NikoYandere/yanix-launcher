@@ -63,3 +63,6 @@ python3 binary/yanix-launcher.py
 ```
 contact:nikoyandere@proton.me
  
+...
+# Available in UcnHub
+...
