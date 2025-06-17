@@ -1,6 +1,5 @@
 
-![logo](https://github.com/user-attachments/assets/31493fc7-0fda-4d7b-8ec9-9f954128b267)
-
+![Futura](https://github.com/user-attachments/assets/767e0497-fcf7-4345-8458-cc757a35280a)
 
 
 # Yanix-Launcher 
