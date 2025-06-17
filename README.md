@@ -32,22 +32,24 @@ Required Packages
 Installation Guide
 
 Ubuntu/Debian:
+```
 sudo apt install python3-pyqt5 python3-pyqt5.qtwebengine python3-requests wine winetricks
-
+```
 Arch Linux:
+```
 sudo pacman -S python-pyqt5 python-pyqtwebengine python-requests wine winetricks
-
+```
 Fedora:
+```
 sudo dnf install python3-qt5 python3-qt5-webengine python3-requests wine winetricks
-
+```
 
 How to Run
-
+```
 git clone https://github.com/NikoYandere/yanix-launcher
 cd yanix-launcher
 python3 binary/yanix-launcher.py
-
-
+```
 Contact
 
 Email: nikoyandere@proton.me  
