@@ -4,62 +4,53 @@
 
 
 # Yanix-Launcher 
-This Launcher is not supported or created by YandereDev,its an independent initiative for a Launcher of Yandere Simulator for Linux OSes,this is a Launcher that runs in WINE,but you need WINE 8.0 or newer to work propelly,and a disadvantage:WINE may have Display Issues but major display bugs have been Fixed in Unity 6 Build,like full screen bugs,but Some Letters don't display, and to fix that, YandereDev has to investigate it, this launcher is open-source, and we have a GitHub Repository and an Installer too yanix is built and tested for Linux, a FreeBSD build or another OS build (If you are Thinking in using This Launcher in MacOS, Optimizations have already been made for MacOS) will be not realsed, but you can Fork the Repository for you Unix/Linux Distro.
+Yanix-Launcher is an independent, open-source launcher for Yandere Simulator on Linux systems. This launcher is not affiliated with or supported by YandereDev.
 
-any bug report like: Letters and not showing for me! will be not listened, its total responsibility of YandereDev, not mine, and know that WINE have Display issues and maybe we will switch to ge-proton
+Yanix runs the game via WINE (version 8.0 or newer is required). Some graphical issues may appear depending on your WINE version, but most major display bugs were fixed in the Unity 6 build. Known issue: some letters may not display correctly — this must be fixed by YandereDev in the game's source, not by the launcher team.
 
-## Dependencies
+This launcher is built and tested for Linux.
+- A MacOS version has already received optimizations.
+- A Windows version is planned, but not available yet.
 
-Before running Yanix-Launcher, you need to make sure that the dependencies are installed on your system.
-
-### Dependencies
-
-1. **pygame** - Library for managing audio and animations.
-2. **requests** - To download updates and resources.
-3. **python3-tk** - For the graphical interface.
-4. **wine** - To run Yandere Simulator on Linux (necessary if you are playing with Wine).
-
-### How to install the dependencies
-
-#### Ubuntu/Debian
-
-Run the following command to install the necessary dependencies:
-
-```
-sudo apt install python3-pygame python3-requests python3-tk wine winetricks
-```
-
-Arch Linux
-
-On Arch Linux, you can use pacman to install the dependencies:
-
-```
-sudo pacman -S python-pygame python-requests tk wine winetricks 
-```
-
-Fedora
-
-On Fedora, use dnf to install the dependencies:
-
-```
-sudo dnf install python3-pygame python3-requests python3-tkinter wine winetricks 
-```
+If you are experiencing bugs like "letters not showing", do not report them to us — it's a WINE rendering issue tied to the game, not the launcher. You may try using GE-Proton instead of regular WINE.
 
 
+Dependencies
 
-# Running:
- ```
-`git clone https://github.com/NikoYandere/yanix-launcher
-          
-cd Yanix-Launcher
+Before running Yanix-Launcher, make sure the following dependencies are installed:
 
+
+Required Packages
+
+1. PyQt5 – GUI Framework
+2. PyQtWebEngine – Web rendering support
+3. requests – For HTTP operations (e.g., updates)
+4. WINE – To run Yandere Simulator
+5. Winetricks – WINE helper scripts
+
+
+Installation Guide
+
+Ubuntu/Debian:
+sudo apt install python3-pyqt5 python3-pyqt5.qtwebengine python3-requests wine winetricks
+
+Arch Linux:
+sudo pacman -S python-pyqt5 python-pyqtwebengine python-requests wine winetricks
+
+Fedora:
+sudo dnf install python3-qt5 python3-qt5-webengine python3-requests wine winetricks
+
+
+How to Run
+
+git clone https://github.com/NikoYandere/yanix-launcher
+cd yanix-launcher
 python3 binary/yanix-launcher.py
-```
-# By Ucn Package Manager
-**(in newer versions yanix will be a executable bcuz i have plans of removing the  system package manager function,but it will be 160~120 mb,so expect a big archive,also it don't will use tk in ucn version,it will use PyQt5)**
-```
-ucn add-repo https://nikoyandere.github.io/UcnHub # ucn don't have by default a repo
-ucn install org.nikoyandere.yanix-launcher
-```
-contact:nikoyandere@proton.me
 
+
+Contact
+
+Email: nikoyandere@proton.me  
+GitHub: https://github.com/NikoYandere/yanix-launcher
+
+Note: Feel free to fork the repository and adapt the launcher to your own Linux/Unix-based distribution.
