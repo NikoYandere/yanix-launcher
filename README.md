@@ -42,7 +42,6 @@ Fedora:
 ```
 sudo dnf install python3-qt5 python3-qt5-webengine python3-requests wine winetricks
 ```
-
 How to Run
 ```
 git clone https://github.com/NikoYandere/yanix-launcher
@@ -53,5 +52,5 @@ Contact
 
 Email: nikoyandere@proton.me  
 GitHub: https://github.com/NikoYandere/yanix-launcher
-
 Note: Feel free to fork the repository and adapt the launcher to your own Linux/Unix-based distribution.
+AUR package:https://aur.archlinux.org/packages/yanix-launcher-git
