@@ -1,105 +1,120 @@
-Niko's License (NLv2) — Standard Copyleft License Version 2.0 — May 2025
-Copyright © NikoYandere, 2025
+Niko's License (NLv3) — Standard Copyleft License Version 3.0 — June 2025
 
+Copyright © NikoYandere, 2025
 Summary
 
-Niko's License (NLv2) is designed to promote free and open-source software development with a balanced protection for the original creator's rights. It encourages sharing, modification, and collaborative improvements under open-source principles, while ensuring fair commercial exploitation rights are reserved to the original copyright holder.
-
+Niko's License v3 (NLv3) maintains a copyleft, open-source approach with specific controls over commercial distribution, particularly for forks. It promotes freedom to use, study, modify, and share software, while allowing derivative works to be commercialized under fair, transparent terms that respect the original author's rights.
 1. Definitions
 
-- Original Work: Software, codebase, or project as released by the original copyright holder under this license.
-- Derivative Work: Any work based upon, derived from, or modified from the Original Work, including forks, ports, modifications, enhancements, or translations.
-- You or Licensee: Any individual or entity exercising rights under this license.
-- Distribution: Any act of providing, publishing, or sharing the Original or Derivative Work by any means.
-- Commercial Distribution: Distribution where a fee, payment, or any form of monetary compensation is expected or required.
-- Freemium Model: Licensing or distribution where a version is free/open-source, with optional paid features or services offered by the original copyright holder.
+    Original Work: The software, codebase, or project as initially released under this license.
+
+    Derivative Work: Any modification, fork, translation, enhancement, or other transformation of the Original Work.
+
+    Licensee (You): Any person or entity using, modifying, or distributing the Work under this license.
+
+    Distribution: Any act of providing or sharing the Work, whether publicly or privately.
+
+    Commercial Distribution: Any Distribution involving payment, monetization, or financial benefit.
+
+    Declared Fork: A Derivative Work clearly identifying itself as a fork or modification of the Original Work, and properly acknowledging the license.
+
+    Platform: Any service, store, or system where the Work is published, sold, or accessed.
+
+    Authorized Attribution: Either inclusion of this license in the source code or clear mention in the distribution description (e.g., “Licensed by NLv3”).
 
 2. Grant of Rights
 
-2.1 Use, Copy, Modify  
-You may freely use, copy, study, and modify the Original Work or any Derivative Work for any personal, educational, or commercial purposes without limitation.
+2.1 Use, Modify, and Study
+You may freely use, modify, and study the Original or Derivative Work for personal, educational, or non-commercial use without limitation.
 
-2.2 Redistribution of Original and Derivative Works  
-- Redistribution is only allowed under this license (NLv2).  
-- Redistribution must include this license text, disclaimers, and all copyright notices intact.
+2.2 Forking and Redistribution
+You may create forks or Derivative Works and redistribute them under this license, provided all terms are respected.
+3. Commercial Distribution Terms
 
-3. Restrictions on Commercial Distribution
+3.1 Original Author's Rights
+Only the original copyright holder may commercialize the Original Work.
 
-3.1 Unauthorized Commercial Distribution Prohibited  
-You may NOT distribute, sell, license, or commercially exploit the Original or Derivative Work for monetary compensation unless you are the original copyright holder or have explicit written permission.
+3.2 Fork Commercialization by Third Parties
+You may commercialize a Declared Fork, under the following conditions:
 
-This includes (but is not limited to):  
-- Selling copies.  
-- Charging for downloads or access.  
-- Including software in paid bundles or packages without permission.
+    A 0.87% fee of each sale or monetization amount must be directed to the original author.
 
-3.2 Freemium Model Reserved to Original Holder  
-Only the original copyright holder may offer commercial versions, paid licenses, or paid services, including freemium models that maintain the open-source core.
+    If the total converted fee in the selling region’s currency is lower than the platform's accepted minimum (e.g., <$6), the fee may be rounded up appropriately.
 
-4. Derivative Works Must Be Open Source
+    If the original author does not provide a valid payment method, the platform retains the fee temporarily as fallback compensation.
 
-- Any Derivative Work must be licensed under NLv2.  
-- Complete source code of the Derivative Work must be provided when distributing.  
-- No additional restrictions that conflict with this license can be imposed.  
-- Changes made must be clearly stated.
+3.3 Authorization and Attribution
+Commercial forks must include either:
 
-5. Attribution and Notices
+    A copy of this license in the source code (LICENSE.txt or similar), or
 
-- Appropriate credit must be given to original author(s).  
-- A copy of this license must be included with every copy of Original or Derivative Work.  
-- Existing copyright or license notices must not be removed or altered.
+    A clear public mention such as “Licensed by NLv3” in the product description.
+
+3.4 Freemium Reserved
+Only the original author may provide freemium versions (free base + paid features or services).
+4. Source Code and Openness
+
+    Derivative Works must remain open source under NLv3.
+
+    Source code must be available upon distribution.
+
+    Clear changelogs must document modifications.
+
+5. Attribution
+
+    All copies must retain original copyright notices.
+
+    You must credit the original author appropriately in forks or derivative works.
+
+    License text must remain unmodified and be included in all distributions.
 
 6. Disclaimer of Warranty
 
-THE ORIGINAL AND DERIVATIVE WORKS ARE PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
-
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 7. Limitation of Liability
 
-THE COPYRIGHT HOLDER OR CONTRIBUTORS ARE NOT LIABLE FOR ANY CLAIMS OR DAMAGES ARISING FROM USE OR DISTRIBUTION.
-
+THE COPYRIGHT HOLDER OR CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM USE OF THIS WORK.
 8. Termination
 
-- License rights terminate automatically if you violate any terms.  
-- Upon termination, cease all use, distribution, and modification.  
-- Termination does not affect rights granted to others who comply.
-
+Violating any terms immediately ends your rights under this license.
+You must stop all distribution and commercialization upon termination.
 9. Governing Law
 
-This license is governed by the laws of the original copyright holder’s jurisdiction.
-
+This license is governed by the laws of the jurisdiction of the original copyright holder.
 10. Acceptance
 
-Using, copying, modifying, or distributing means you agree to be bound by this license.
+By using, copying, modifying, or distributing this software, you accept the terms of this license.
+11. Contributions
 
-11. Contribution Back and Collaborative Development
+    Contributions may be used by the original author under NLv3.
 
-- Contributions you make can be used by the original copyright holder under NLv2 terms.  
-- Contributions must include author attribution.  
-- The original holder can use contributions in commercial offerings without further permission but with proper credit.
+    Contributors retain authorship credit.
 
-12. Patent Grant and Patent Retaliation
+    Contributions may be used in commercial versions by the original author without further permission.
 
-- The original holder grants an irrevocable patent license to use the Original or Derivative Work.  
-- Initiating patent litigation against contributors or the holder revokes your license rights automatically.
+12. Patent Grant
 
-13. Trademark and Branding
+The license includes a non-exclusive, royalty-free patent grant for the use of the software.
+Patent litigation against the original holder or contributors voids this license.
+13. Trademarks
 
-- This license does NOT grant rights to use trademarks, logos, or branding associated with the Original Work.  
-- Separate permission is required for such use.
+This license does not grant trademark rights. Use of names, logos, or branding requires separate permission.
+14. SaaS and Network Use
 
-14. SaaS and Network Use Clarification
+Providing the Work as a service (SaaS) is not considered distribution.
+However, license and attribution info must be visible and accessible to users.
+15. License Compatibility
 
-- Providing the software as a service (SaaS) or over a network is NOT considered distribution under this license.  
-- You must provide users with clear license information and attribution when providing SaaS.
+This license is only compatible with:
 
-15. License Compatibility and Relicensing
+    Other licenses in the Niko’s License family (NLv1, NLv2, etc.)
 
-- You may combine this work with other compatible licensed code, provided the combined work complies with NLv2 obligations.  
-- You may NOT relicence the Original Work under more restrictive terms.
+    The Hisko Public License (HPL)
+    Use with other licenses is not allowed, unless expressly permitted by the original author.
 
-16. Severability and Interpretation
+16. Severability
 
-- If any part of this license is invalid, the rest remains in effect.  
-- License interpretation aims to promote free software with fair author protection.
+If any part of this license is held invalid, the remainder still applies.
 
-End of Niko’s License Version 2 (NLv2)
+End of Niko’s License Version 3.0 (NLv3)
+For more information, contact the license author or refer to official project documentation.
