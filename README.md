@@ -74,6 +74,4 @@ Contact
 
 Email: nikoyandere@proton.me
 GitHub: github.com/NikoYandere/yanix-launcher
-
-Feel free to fork and modify the project to suit your own Linux or Unix-based distro.
-Aur Package:https://aur.archlinux.org/packages/yanix-launcher-git
+Aur Package https://aur.archlinux.org/packages/yanix-launcher-git
