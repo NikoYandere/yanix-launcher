@@ -50,11 +50,11 @@ sudo apt install python3-pyqt5 python3-pyqt5.qtwebengine python3-requests wine w
 ```
 
 Arch Linux:
-```bash
+```
 sudo pacman -S python-pyqt5 python-pyqtwebengine python-requests wine winetricks
 
 Fedora:
-```bash
+```
 sudo dnf install python3-qt5 python3-qt5-webengine python3-requests wine winetricks
 ```
 
@@ -62,7 +62,7 @@ sudo dnf install python3-qt5 python3-qt5-webengine python3-requests wine winetri
 
 How to run
 
-```bash
+```
 git clone https://github.com/NikoYandere/yanix-launcher
 cd yanix-launcher
 python3 binary/yanix-launcher.py
