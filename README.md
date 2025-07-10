@@ -73,6 +73,7 @@ python3 binary/yanix-launcher.py
 Contact
 
 Email: nikoyandere@proton.me
+
 GitHub: github.com/NikoYandere/yanix-launcher
 
 [Aur Package](https://aur.archlinux.org/packages/yanix-launcher-git)
