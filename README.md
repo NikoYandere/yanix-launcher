@@ -1,6 +1,5 @@
 
-![Futura](https://github.com/user-attachments/assets/767e0497-fcf7-4345-8458-cc757a35280a)
-
+![Yanix_Logo](https://i.imgur.com/tWQfbYp.png)
 
 # Yanix-Launcher 
 Yanix-Launcher is an independent, open-source launcher for Yandere Simulator on Linux systems. This launcher is not affiliated with or supported by YandereDev.
