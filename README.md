@@ -45,7 +45,7 @@ winetricks – for managing WINE components and tweaks
 Installation
 
 Ubuntu/Debian:
-```bash
+```
 sudo apt install python3-pyqt5 python3-pyqt5.qtwebengine python3-requests wine winetricks
 ```
 
