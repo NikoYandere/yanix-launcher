@@ -28,9 +28,9 @@ Requirements
 
 Before running Yanix-Launcher, make sure the following packages are installed:
 
-PyQt5 – for the graphical interface
+PyQt6 – for the graphical interface
 
-PyQtWebEngine – for embedded web content
+PyQt6WebEngine – for embedded web content
 
 requests – used for update checks and networking
 
@@ -41,26 +41,23 @@ winetricks – for managing WINE components and tweaks
 
 
 ---
-
-Installation
+# Installation 
 
 Ubuntu/Debian:
 ```
-sudo apt install python3-pyqt5 python3-pyqt5.qtwebengine python3-requests wine winetricks
+sudo apt install python3-pyqt6 python3-pyqt6.qtwebengine python3-requests wine winetricks
 ```
-
 Arch Linux:
 ```
-sudo pacman -S python-pyqt5 python-pyqtwebengine python-requests wine winetricks
+sudo pacman -S python-pyqt6 python-pyqt6-webengine python-requests wine winetricks
 ```
 Fedora:
 ```
-sudo dnf install python3-qt5 python3-qt5-webengine python3-requests wine winetricks
+sudo dnf install python3-qt6 python3-qt6-webengine python3-requests wine winetricks
 ```
-
 ---
 
-How to run
+How to run by source
 
 ```
 git clone https://github.com/NikoYandere/yanix-launcher
