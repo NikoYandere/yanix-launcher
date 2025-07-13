@@ -9,7 +9,7 @@ import zipfile
 import sys
 import socket
 import json
-import base64 # Import base64 module
+import base64 
 
 from PyQt6.QtWebEngineWidgets import QWebEngineView
 from PyQt6.QtWidgets import (
