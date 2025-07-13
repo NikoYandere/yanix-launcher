@@ -565,7 +565,7 @@ class YanixLauncher(QMainWindow):
         self.wineprefix_button.setText(self.lang["wineprefix"])
         self.support_button.setText(self.lang["support"])
         self.discord_button.setText(self.lang["discord"])
-        self.version_label.setText(f"{self.lang['welcome']} V 0.8")
+        self.version_label.setText(f"{self.lang['welcome']} V 0.9")
 
         self.apply_theme(self.current_theme_name)
 
