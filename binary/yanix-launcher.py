@@ -15,7 +15,7 @@ from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QPushButton, QFileDialog, QVBoxLayout,
     QWidget, QLabel, QMessageBox, QComboBox, QDialog, QHBoxLayout,
-    QSplashScreen
+    QSplashScreen, QProgressDialog
 )
 from PyQt5.QtGui import QFont, QPalette, QLinearGradient, QColor, QBrush, QIcon, QPainter, QPixmap
 from PyQt5.QtCore import Qt, QUrl, QRect, QTimer, QCoreApplication
@@ -29,6 +29,7 @@ except ImportError:
 
 
 CLIENT_ID = '1383809366460989490'
+USER_AGENT = 'YanixLauncher/1.0.0'
 
 YANIX_PATH = os.path.expanduser("~/.local/share/yanix-launcher")
 DATA_DOWNLOAD_URL = "https://nikoyandere.github.io/data.zip"
@@ -46,7 +47,7 @@ CUSTOM_THEMES_DIR = os.path.join(YANIX_PATH, "themes")
 
 YAN_SIM_DOWNLOAD_URL = "https://yanderesimulator.com/dl/latest.zip"
 YAN_SIM_INSTALL_PATH = os.path.join(YANIX_PATH, "game")
-YAN_SIM_EXE_NAME = "YandereSimulator.exe" 
+YAN_SIM_EXE_NAME = "YandereSimulator.exe"
 YAN_SIM_NATIVE_EXE_PATH = os.path.join(YAN_SIM_INSTALL_PATH, YAN_SIM_EXE_NAME)
 
 
@@ -235,7 +236,8 @@ def download_and_extract_data(splash_screen, current_lang_data):
 
     splash_screen.update_splash_content(current_lang_data["downloading_data"])
     try:
-        response = requests.get(DATA_DOWNLOAD_URL, stream=True, timeout=10)
+        headers = {'User-Agent': USER_AGENT}
+        response = requests.get(DATA_DOWNLOAD_URL, stream=True, timeout=10, headers=headers)
         response.raise_for_status()
 
         total_size = int(response.headers.get('content-length', 0))
@@ -432,7 +434,7 @@ class YanixLauncher(QMainWindow):
         try:
             self.rpc = Presence(CLIENT_ID)
             self.rpc.connect()
-            self.update_rpc(details="In the launcher", state="Browsing...")
+            self.update_rpc(details="In the launcher", state="Browse...")
         except Exception:
             self.rpc = None
 
@@ -565,7 +567,7 @@ class YanixLauncher(QMainWindow):
         self.wineprefix_button.setText(self.lang["wineprefix"])
         self.support_button.setText(self.lang["support"])
         self.discord_button.setText(self.lang["discord"])
-        self.version_label.setText(f"{self.lang['welcome']} V 0.9")
+        self.version_label.setText(f"{self.lang['welcome']} V 1.0.0")
 
         self.apply_theme(self.current_theme_name)
 
@@ -576,29 +578,27 @@ class YanixLauncher(QMainWindow):
 
     def _wait_for_game_exit(self, process):
         process.wait()
-        self.update_rpc(details="In the launcher", state="Browsing...")
+        self.update_rpc(details="In the launcher", state="Browse...")
 
     def launch_game(self):
         game_to_launch = None
         game_dir = None
-        wine_needed = False
+        wine_needed = True
 
-        if os.path.exists(YAN_SIM_NATIVE_EXE_PATH):
-            game_to_launch = [YAN_SIM_NATIVE_EXE_PATH]
-            game_dir = YAN_SIM_INSTALL_PATH
-            wine_needed = False
-        elif os.path.exists(CONFIG_PATH):
+        if os.path.exists(CONFIG_PATH):
             with open(CONFIG_PATH) as f:
                 wine_path = f.read().strip()
             if os.path.exists(wine_path):
                 game_to_launch = ["wine", wine_path]
                 game_dir = os.path.dirname(wine_path)
-                wine_needed = True
             else:
                 QMessageBox.critical(self, "Error", "The saved game path is invalid. Please select the .exe file for WINE again.")
                 return
+        elif os.path.exists(YAN_SIM_NATIVE_EXE_PATH):
+            game_to_launch = ["wine", YAN_SIM_NATIVE_EXE_PATH]
+            game_dir = YAN_SIM_INSTALL_PATH
         else:
-            QMessageBox.critical(self, "Error", "Game executable path not defined. Please select the .exe file for WINE or download Yandere Simulator for native launch.")
+            QMessageBox.critical(self, "Error", "Game executable path not defined. Please select the .exe file for WINE or download Yandere Simulator.")
             return
 
         if game_to_launch:
@@ -618,14 +618,11 @@ class YanixLauncher(QMainWindow):
                 monitor_thread.start()
 
             except FileNotFoundError:
-                if wine_needed:
-                    QMessageBox.critical(self, "Error", "WINE is not installed or not in your system's PATH.")
-                else:
-                    QMessageBox.critical(self, "Error", "Could not find the native game executable. Ensure 'YandereSimulator.exe' exists in the installed game directory.")
-                self.update_rpc(details="In the launcher", state="Browsing...")
+                QMessageBox.critical(self, "Error", "WINE is not installed or not in your system's PATH.")
+                self.update_rpc(details="In the launcher", state="Browse...")
             except Exception as e:
                 QMessageBox.critical(self, "Error", f"An error occurred while launching the game: {e}")
-                self.update_rpc(details="In the launcher", state="Browsing...")
+                self.update_rpc(details="In the launcher", state="Browse...")
 
     def select_exe(self):
         file, _ = QFileDialog.getOpenFileName(self, "Select Game Executable", "", "EXE Files (*.exe)")
@@ -659,22 +656,55 @@ class YanixLauncher(QMainWindow):
             QMessageBox.information(self, "Info", "Yandere Simulator is already installed natively.")
             return
 
-        QMessageBox.information(self, self.lang["download"], "Starting Yandere Simulator download and extraction. This may take a while.")
+        reply = QMessageBox.question(self, self.lang["download"],
+                                     "Do you want to download Yandere Simulator?\nThis may take a while.",
+                                     QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if reply == QMessageBox.No:
+            return
 
         try:
-            response = requests.get(YAN_SIM_DOWNLOAD_URL, stream=True, timeout=300)
+            headers = {'User-Agent': USER_AGENT}
+            response = requests.get(YAN_SIM_DOWNLOAD_URL, stream=True, timeout=300, headers=headers)
             response.raise_for_status()
+            total_size = int(response.headers.get('content-length', 0))
 
+            total_size_kb = total_size // 1024 if total_size > 0 else 0
+
+            progress_dialog = QProgressDialog("Downloading Yandere Simulator...", "Cancel", 0, total_size_kb, self)
+            progress_dialog.setWindowTitle("Download Progress")
+            progress_dialog.setWindowModality(Qt.WindowModal)
+            progress_dialog.show()
+
+            downloaded_size = 0
             with open(yan_sim_zip_path, 'wb') as f:
                 for chunk in response.iter_content(chunk_size=8192):
+                    if progress_dialog.wasCanceled():
+                        raise InterruptedError("Download canceled by user.")
+
                     f.write(chunk)
-            QMessageBox.information(self, self.lang["download"], "Download complete. Extracting files...")
+                    downloaded_size += len(chunk)
+                    progress_dialog.setValue(downloaded_size // 1024)
+                    QApplication.processEvents()
+
+            progress_dialog.setValue(total_size_kb)
+
+            QMessageBox.information(self, self.lang["download"], "Download complete. Now extracting files...")
+            extract_dialog = QProgressDialog("Extracting files...", None, 0, 0, self)
+            extract_dialog.setWindowTitle("Extracting")
+            extract_dialog.setWindowModality(Qt.WindowModal)
+            extract_dialog.setCancelButton(None)
+            extract_dialog.show()
+            QApplication.processEvents()
 
             os.makedirs(YAN_SIM_INSTALL_PATH, exist_ok=True)
             with zipfile.ZipFile(yan_sim_zip_path, 'r') as zip_ref:
                 zip_ref.extractall(YAN_SIM_INSTALL_PATH)
+
+            extract_dialog.close()
             QMessageBox.information(self, "Success", "Yandere Simulator downloaded and extracted successfully!")
 
+        except InterruptedError as e:
+             QMessageBox.warning(self, "Download Canceled", str(e))
         except requests.exceptions.RequestException as e:
             QMessageBox.critical(self, self.lang["download_failed"], f"{self.lang['download_failed']} (Error: {e}).")
         except zipfile.BadZipFile as e:
@@ -684,6 +714,7 @@ class YanixLauncher(QMainWindow):
         finally:
             if os.path.exists(yan_sim_zip_path):
                 os.remove(yan_sim_zip_path)
+
 
     def manage_winetricks(self):
         if not shutil.which("winetricks"):
